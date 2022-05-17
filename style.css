@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+body{
+   
+    height: 100vh;
+    margin: 0; 
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("http://www.noaa.gov/sites/default/files/styles/landscape_width_650/public/legacy/image/2019/Jun/PHOTO-spring%20safety-Courtesy%20of%20brad%20goddard-1125x534-Landscape.jpg?itok=DHsVP4_m");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.date-container{
+    width: 20%;
+    height: 12%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(40, 39, 39, 0.646);
+    box-shadow: 0 8px 32px 0 rgba(188, 188, 193, 0.519);
+    backdrop-filter: blur( 4.5px );
+    color: aliceblue !important;
+    border-color: aliceblue ;
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    margin: 20px 20px 0px 0px;
+    text-align: end;
+    font-size: 30px;
+    font-weight: 100;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.time{
+    color: aliceblue !important;
+}
+.date{
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.card{
+    color: white;
+    padding: 2em;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em;
+    background: rgba(40, 39, 39, 0.646);
+    box-shadow: 0 8px 32px 0 rgba(192, 192, 197, 0.482);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 30px;
+    
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #c3bebe2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: 80%;
+  }
+   
+input::placeholder{
+    color: rgba(240, 248, 255, 0.571);
+}
+
+  button:hover {
+    background: #e1dbdba3;
+  }
+  .props{
+      padding: 5px;
+      
+  }
+  h1.temp {
+    
+    margin: 30px;
+    margin-bottom: 0.4em;
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  .city{
+      margin-top: 20px;
+      text-align: center;
+      font-size: 32px  ;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+
+  @media only screen and  (max-width:730px){
+
+    .container{
+        padding: 20px;
+    }
+
+  .date-container{
+    font-size: 20px;
+    width: 40%;
+  }
+  }
+
+
+
+
+  
+  
+  
